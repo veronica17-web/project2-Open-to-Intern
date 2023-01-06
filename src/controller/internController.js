@@ -12,6 +12,7 @@ const regforNo = /^[6-9]\d{9}$/
 const regforemail =/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 
 const createIntern = async function (req, res) {
+    res.setHeader('Access-Control-Allow-Origin','*')
     try {
 
         if(Object.keys(req.body).length==0) return res.status(400).send({ status: false, message: "Data Not given" })

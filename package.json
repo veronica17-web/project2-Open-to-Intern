@@ -4,7 +4,7 @@
     "description": "Backend cohort for Plutonium(July-Nov)",
     "main": "index.js",
     "scripts": {
-        "start": "node src/index.js"
+        "start": "nodemon src/index.js"
     },
     "author": "Vishal Pasi",
     "license": "ISC",
@@ -13,6 +13,7 @@
         "express": "^4.17.1",
         "moment": "^2.29.1",
         "mongoose": "^6.5.4",
+        "multer": "^1.4.5-lts.1",
         "nodemon": "^2.0.15"
     }
 }

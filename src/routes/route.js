@@ -10,8 +10,10 @@ router.post('/functionup/interns',internController.createIntern)
 
 router.get('/functionup/collegeDetails',collageController.getCollages)
 
-module.exports = router;
 
+
+
+module.exports = router;
 
 
 

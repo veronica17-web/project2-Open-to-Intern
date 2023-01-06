@@ -37,6 +37,7 @@ const createCollage = async function (req, res) {
     }
 }
 const getCollages = async function (req, res) {
+     res.setHeader('Access-Control-Allow-Origin','*')
     try {
         let collegeName = req.query.collegeName;
 
@@ -71,4 +72,7 @@ const getCollages = async function (req, res) {
 
     } catch (err) { return res.status(500).send({ status: false, message: err.message }) }
 }
+
+
+
 module.exports = { createCollage, getCollages }
